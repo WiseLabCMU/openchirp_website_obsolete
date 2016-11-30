@@ -1,0 +1,39 @@
+<!doctype html>
+<html ng-app="OpenchirpApp">
+  <head>
+    <meta charset="utf-8">
+    <title>OpenChirp CMU's LoRa network</title>
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+    [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+      display: none !important;
+    }
+    </style>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <header class="header" role="banner">
+      <div class="header__text">
+        <p>OpenChirp CMU's LoRA network </p>
+      </div>
+    </header>
+
+    <main class="main" role="main">
+      <div ng-view class="flex"></div>
+    </main>
+
+    <!-- Vendor libraries -->
+    <script src="lib/jquery-v1.11.1.js"></script>
+    <script src="lib/angular-v1.2.22.js"></script>
+    <script src="lib/angular-route-v1.2.22.js"></script>
+    <script src="lib/angular-sanitize-v1.2.22.js"></script>
+    <!-- Application Files -->
+    <script src="js/app.js"></script>
+    <script src="js/controllers/TreeCtrl.js"></script>
+    <script src="js/controllers/DeviceCtrl.js"></script>
+    <script src="js/factories/TreeFactory.js"></script>
+    <script src="js/factories/DeviceFactory.js"></script>
+    <!--<script src="js/directives/TreeDrctv.js"></script>
+    <script src="js/directives/DeviceDrctv.js"></script>-->
+  </body>
+</html>
