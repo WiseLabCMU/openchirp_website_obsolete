@@ -22,10 +22,10 @@ ol {
   background: #192124;
   margin: 0 0 10px;
   color: #D5DDE0;
-  text-align: center;
+  text-align: left;
   margin-bottom: 0;
 }
-
+/**
 .header::before {
   content: '';
   width: 15px;
@@ -38,7 +38,7 @@ ol {
   position: absolute;
   top: 25px;
 }
-
+**/
 @media screen and (max-width: 640px) {
   .header::before {
     display: none;
@@ -67,7 +67,7 @@ ol {
   background-color: #313744;
   color: #D5DDE0;
   left: 0;
-  width: 30%;
+  width: 15%;
   padding: 25px;
 }
 

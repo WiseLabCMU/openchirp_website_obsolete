@@ -1,7 +1,9 @@
-angular.module('OpenChirpApp', [
+var openChirpModule = angular.module('OpenChirpApp', [
   'ngRoute',
   'ngSanitize'
-]).config(function ( $routeProvider ) {
+]);
+
+openChirpModule.config(function ( $routeProvider ) {
   
   'use strict';
 
@@ -17,7 +19,9 @@ angular.module('OpenChirpApp', [
     .otherwise({
       redirectTo: '/tree'
     });
-}).run(function($rootScope){
+})
+
+openChirpModule.run(function($rootScope){
   $rootScope.$on('$routeChangeError', function(event, current, previous, rejection){
     console.log(event, current, previous, rejection)
   })
