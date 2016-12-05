@@ -1,4 +1,4 @@
-angular.module('OpenchirpApp', [
+angular.module('OpenChirpApp', [
   'ngRoute',
   'ngSanitize'
 ]).config(function ( $routeProvider ) {
@@ -8,16 +8,14 @@ angular.module('OpenchirpApp', [
   $routeProvider
     .when('/tree', {
       templateUrl: 'views/tree.html',
-      controller: 'TreeCtrl',
-      controllerAs: 'tree'
+      controller: 'TreeCtrl'
     })
     .when('/tree/device/:id', {
       templateUrl: 'views/device.html',
-      controller: 'DeviceCtrl',
-      controllerAs: 'device'
+      controller: 'DeviceCtrl'
     })
     .otherwise({
-      redirectTo: '/device'
+      redirectTo: '/tree'
     });
 }).run(function($rootScope){
   $rootScope.$on('$routeChangeError', function(event, current, previous, rejection){
